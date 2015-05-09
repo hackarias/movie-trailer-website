@@ -4,10 +4,12 @@ import webbrowser
 
 __author__ = 'zack'
 
+
 class Movie():
     """
     This class stores movie related information.
     """
+
     def __init__(self, movie_title, trailer_youtube):
         """
         Takes a movie title and runs it through an imdb api: http://www.omdbapi.com/ that returns a json file
