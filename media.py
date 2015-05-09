@@ -1,18 +1,20 @@
-__author__ = 'Zackarias Gustavsson'
 import urllib
 import json
 import webbrowser
 
 
 class Movie():
+
     """
     This class stores movie related information.
     """
 
     def __init__(self, movie_title, trailer_youtube):
         """
-        Takes a movie title and runs it through an imdb api: http://www.omdbapi.com/ that returns a json file
-        with info about the movie. The movies title, plot, poster image, age-rating, duration, imdb ratings and
+        Takes a movie title and runs it through an imdb api:
+        http://www.omdbapi.com/ that returns a json file
+        with info about the movie. The movies title, plot, poster
+        image, age-rating, duration, imdb ratings and
         awards is then parsed and stored in instance variables.
 
         Takes a YouTube link for the trailer as well.
