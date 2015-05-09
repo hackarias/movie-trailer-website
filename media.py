@@ -24,7 +24,6 @@ class Movie():
     def show_trailer(self):
         webbrowser.open(self.trailer_youtube_url)
 
-
 class Series():
     def __init__(self):
         pass
