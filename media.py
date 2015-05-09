@@ -9,6 +9,17 @@ class Movie():
     This class stores movie related information.
     """
     def __init__(self, movie_title, trailer_youtube):
+        """
+        Takes a movie title and runs it through an imdb api: http://www.omdbapi.com/ that returns a json file
+        with info about the movie. The movies title, plot, poster image, age-rating, duration, imdb ratings and
+        awards is then parsed and stored in instance variables.
+
+        Takes a YouTube link for the trailer as well.
+
+        :param movie_title:
+        :param trailer_youtube:
+        :return:
+        """
         connection = urllib.urlopen("http://www.omdbapi.com/?t=" + movie_title)
         movie_info = json.loads(connection.read())
 
@@ -22,8 +33,9 @@ class Movie():
         self.awards = movie_info['Awards']
 
     def show_trailer(self):
-        webbrowser.open(self.trailer_youtube_url)
+        """
+        Constructor that opens the youtube trailer.
 
-class Series():
-    def __init__(self):
-        pass
+        :return:
+        """
+        webbrowser.open(self.trailer_youtube_url)
