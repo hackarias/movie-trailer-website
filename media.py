@@ -1,8 +1,7 @@
+__author__ = 'Zackarias Gustavsson'
 import urllib
 import json
 import webbrowser
-
-__author__ = 'zack'
 
 
 class Movie():

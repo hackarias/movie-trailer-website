@@ -1,4 +1,4 @@
-__author__ = 'zackarias gustavsson'
+__author__ = 'Zackarias Gustavsson'
 import media
 import fresh_tomatoes
 
